@@ -98,3 +98,9 @@ There is **no** shared guestbook, global visitor counter, remote AI generation, 
 - All melodic notes are synthesized by Web Audio; no third-party music recordings are bundled.
 
 **Team:** Fill in your real names and GitHub details before submission. Hackathon entry rules, dates, and side-quest verification should be checked in your event workspace.
+
+## Final hackathon polish
+
+The homepage includes a lightweight **Dreamer Pass** with three working jump links (Lullaby Lab, Dream Delivery, Dream Maker) so judges and new visitors can easily discover the interactive parts. The Dream Maker invites visitors to save their finished dream as a PNG; the Lullaby Lab clarifies that sound must first be enabled in the header. These are presentation and accessibility improvements, not additional backend features.
+
+For the demo sequence and **manual published-site checklist**, see [FINAL_REVIEW.md](FINAL_REVIEW.md). The page remains a plain GitHub Pages static site with no new dependencies.

@@ -3,7 +3,8 @@
 Repository: https://github.com/piyushkamble-12/pipdream
 
 ## Before publishing
-- [ ] Merge the `fix/github-pages-assets-and-docs` pull request after review.
+- [x] Artwork restore PR #1 merged into `main` on 18 October 2026.
+- [ ] Review and merge the **final-polish pull request** into `main` before deployment.
 - [ ] **Make the repository public** if the hackathon requires judges to inspect source code: Settings > General > Danger Zone > Change repository visibility.
 - [ ] Configure Pages: Settings > Pages > Build and deployment > Deploy from a branch > `main` > `/ (root)`.
 - [ ] Wait until GitHub Pages reports a successful deploy. The expected project URL is `https://piyushkamble-12.github.io/pipdream/` **only after Pages has actually published it**.

@@ -118,3 +118,8 @@ Each **actual completed action** dispatches a local 'pip:milestone' event; 'pass
 
 ### Freeze and test
 This is the **last planned feature** before submission. Review 'PASSPORT_TEST_PLAN.md' for test cases, then run the full cross-device and published-site checklist. Do not add unrelated features after merging.
+
+
+## Gentle living-motion polish
+
+The optional `motion.js` and `motion.css` layer adds Pip's gentle floating portrait, subtle stars, small floating notes after music-key taps, a short lantern glow, story-card arrival, and passport stamp effects. It does not alter the audio controls, stored progress, dream generation, or certificates. Decorative motion respects reduced-motion settings and is removed on page exit. See `MOTION_TEST_PLAN.md` for mandatory manual and real-device checks.

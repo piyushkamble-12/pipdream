@@ -123,3 +123,10 @@ This is the **last planned feature** before submission. Review 'PASSPORT_TEST_PL
 ## Gentle living-motion polish
 
 The optional `motion.js` and `motion.css` layer adds Pip's gentle floating portrait, subtle stars, small floating notes after music-key taps, a short lantern glow, story-card arrival, and passport stamp effects. It does not alter the audio controls, stored progress, dream generation, or certificates. Decorative motion respects reduced-motion settings and is removed on page exit. See `MOTION_TEST_PLAN.md` for mandatory manual and real-device checks.
+
+
+## Theme-matched desktop cursors
+
+A small, **static SVG cursor** follows Pip's three lantern moods: berry-pink for sunset, lavender for moonlight, and pale blue for midnight. Hovering links and enabled controls adds a tiny star accent. It uses six local `assets/cursor-*.svg` files plus CSS—no image downloads, API requests, JavaScript event handlers, or extra animation loops. The existing optional sparkle trail is unchanged.
+
+The cursor only applies to fine-pointer hover devices. Phones, touchscreens, text entry, disabled controls, and high-contrast users retain sensible native cursor behavior. Browsers lacking SVG cursor support fall back to the default arrow or pointer. Test all three moods and click targets on the deployed GitHub Pages URL.

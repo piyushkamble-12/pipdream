@@ -578,3 +578,46 @@ button:disabled { opacity: .5; cursor: not-allowed; transform: none !important; 
 @media(max-width:780px) { .passport-steps { grid-template-columns:1fr; } .passport-step { display:grid; grid-template-columns:60px 1fr; column-gap:12px; } .passport-step h3 { grid-column:2; grid-row:1; margin:0 0 3px; } .passport-step .passport-stamp { grid-row:1 / span 4; } .passport-step p, .passport-step .passport-step-state, .passport-step a { grid-column:2; } }
 @media(max-width:500px) { .passport-section { padding-block:58px 76px; } .passport-shell { padding:18px 14px; } .passport-award { padding:16px 12px; } .passport-award-actions .button { width:100%; } .passport-foot { flex-direction:column; align-items:flex-start; } }
 @media(prefers-reduced-motion:reduce) { #passport-progress-bar { transition:none; } .passport-stamp { transition:none; } }
+
+/*
+ * Pip's hand-drawn cursor set: three mood-matched arrows + clickable sparkle.
+ * Browser-native cursor is the automatic fallback if SVG cursors aren't supported.
+ * Applied only to devices with a real, hover-capable pointer.
+ */
+@media (hover: hover) and (pointer: fine) and (forced-colors: none) {
+  html, body {
+    cursor: url("assets/cursor-sunset.svg") 3 2, auto;
+  }
+  body[data-mood="lavender"] {
+    cursor: url("assets/cursor-lavender.svg") 3 2, auto;
+  }
+  body[data-mood="midnight"] {
+    cursor: url("assets/cursor-midnight.svg") 3 2, auto;
+  }
+
+  :is(a[href], button:not(:disabled), select:not(:disabled), summary, label[for], label.maker-choice, input[type="radio"], input[type="checkbox"], [role="button"]) {
+    cursor: url("assets/cursor-sunset-click.svg") 3 2, pointer;
+  }
+  body[data-mood="lavender"] :is(a[href], button:not(:disabled), select:not(:disabled), summary, label[for], label.maker-choice, input[type="radio"], input[type="checkbox"], [role="button"]) {
+    cursor: url("assets/cursor-lavender-click.svg") 3 2, pointer;
+  }
+  body[data-mood="midnight"] :is(a[href], button:not(:disabled), select:not(:disabled), summary, label[for], label.maker-choice, input[type="radio"], input[type="checkbox"], [role="button"]) {
+    cursor: url("assets/cursor-midnight-click.svg") 3 2, pointer;
+  }
+
+  /* Preserve meaningful system cursors for writing and disabled controls. */
+  input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+  textarea, [contenteditable="true"] {
+    cursor: text;
+  }
+  :is(button, select, input):disabled, [aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+@media (prefers-contrast: more) {
+  html, body { cursor: auto !important; }
+  :is(a[href], button:not(:disabled), select:not(:disabled), summary, label[for], label.maker-choice, input[type="radio"], input[type="checkbox"], [role="button"]) { cursor: pointer !important; }
+  input:not([type="radio"]):not([type="checkbox"]), textarea, [contenteditable="true"] {
+    cursor: text !important;
+  }
+}

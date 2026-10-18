@@ -10,7 +10,7 @@
 
 ## Project description
 
-Meet Pip, the Midnight Nursery's tiny Junior Dream Engineer. Visitors enter Pip's bedtime workshop, where they can compose a miniature six-note music-box tune, give a lantern three different lighting moods, and deliver a dream package along one of three illustrated routes. The signature experience, **Build a Little Dream**, turns three personal choices into a charming custom story with a drawn dream scene, Pip's message, and a copyable keepsake. There is also a five-letter Sleepy Mailroom toy, three scroll-revealed origin chapters, a smiling Pip, and a secret moon waiting to be discovered.
+Meet Pip, the Midnight Nursery's tiny Junior Dream Engineer. Visitors enter Pip's bedtime workshop, where they can compose a miniature six-note music-box tune, give a lantern three different lighting moods, and deliver a dream package along one of three illustrated routes. The signature experience, **Build a Little Dream**, turns three personal choices into a charming custom story with a drawn dream scene, Pip's message, and a downloadable PNG or copyable keepsake. There is also a five-letter Sleepy Mailroom toy, three scroll-revealed origin chapters, a smiling Pip, and a secret moon waiting to be discovered.
 
 ## Three required portfolio inventions
 
@@ -20,7 +20,7 @@ Meet Pip, the Midnight Nursery's tiny Junior Dream Engineer. Visitors enter Pip'
 
 ## Signature visitor experience
 
-**Build a Little Dream:** Select feeling + destination + companion; generates one of 27 deterministic local story combinations. Interactive illustrated card and story copy action (clipboard or selectable fallback). No AI service, user account, or backend.
+**Build a Little Dream:** Select feeling + destination + companion; generates one of 27 deterministic local story combinations. Interactive illustrated card, browser-native PNG export, and story copy action (clipboard or selectable fallback). No AI service, user account, or backend.
 
 ## Original portfolio and personality
 

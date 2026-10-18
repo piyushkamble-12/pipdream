@@ -685,7 +685,10 @@
 
       // Download trigger
       canvas.toBlob((blob) => {
-        if (!blob) throw new Error('Blob export failed');
+        if (!blob) {
+          status.textContent = 'Could not generate card image. You can still use Copy my story!';
+          return;
+        }
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;

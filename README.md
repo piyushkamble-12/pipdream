@@ -23,9 +23,9 @@ An interactive character-portfolio website for **Baby's First Website 2026**, **
 | **Storybook** | Three origin-story chapters revealed through scrolling; never inaccessible when motion is reduced or JavaScript is disabled. |
 | **Pip & extras** | Clickable Pip greeting, keyboard-accessible five-knock moon Easter egg, optional fine-pointer sparkle trail, local browser welcome-back greeting. |
 
-**Sound rules:** Audio never autoplays. Sound is off on first visit. Tapping the original "Play my lullaby" button deliberately enables sound (as in V3); composing notes while muted records notes silently, and replay asks the visitor to turn sound on. Muting stops melodies. No microphone permission or recorded audio is used.
+**Sound rules:** Audio never autoplays. Sound is off on the first visit and the original lullaby will ask visitors to turn on the global sound switch before playback. The note keys can still record quietly when muted, but replay requires sound on. Muting stops audio. No microphone permission or recorded audio is used.
 
-**Saving a dream:** The Copy button uses the browser's Clipboard API in secure contexts (e.g. `https://` GitHub Pages or `http://localhost`). Where clipboard access is blocked, a selectable text field appears for manual copying. PNG export is **not** included; no false download button is displayed. Dream content is not stored or uploaded.
+**Saving a dream:** Choose **Save Dream Card** to export a high-resolution PNG directly in your browser using Canvas. The Copy button uses the Clipboard API in secure contexts; if blocked, a selectable text field appears for manual copying. Export and story generation are entirely local; no account or backend is needed.
 
 ## Assets and offline reliability
 

@@ -3,10 +3,10 @@
 **Event:** Baby's First Website 2026 — haX.baby  
 **Track:** Track 1 — Pip, the Skull Baby  
 **Title:** Pip's Dream Desk — A Tiny Workshop for Big Dreams  
-**Team name:** [FILL IN]  
-**Team members:** [FILL IN REGISTERED MEMBERS]  
-**Public repository:** [FILL IN ACTUAL LINK]  
-**Working website:** [FILL IN ACTUAL GITHUB PAGES LINK]
+**Team name:** Light yagami  
+**Team members:** Piyush kamble  
+**Public repository:** https://github.com/piyushkamble-12/pipdream
+**Working website:** https://piyushkamble-12.github.io/pipdream/
 
 ## Project description
 

@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
   <script src="dream-maker.js" defer></script>
+  <script src="passport.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,6 +47,7 @@
         </nav>
         <div class="signature"><span aria-hidden="true">♡</span> handwritten with sleepy little hands</div>
         <p class="visitor-note" id="visitor-note" aria-live="polite">A little corner of the internet, saved just for you.</p>
+        <a href="#passport" class="passport-hero-link">✦ Open your Dream Passport ↗</a>
       </div>
       <div class="hero-stage" id="about">
         <div class="hero-stamp stamp-top" aria-hidden="true">EST. ONE<br>MOON AGO</div>
@@ -60,6 +62,60 @@
     </section>
 
     <div class="marquee" aria-hidden="true"><div class="marquee-track">✧ SOFT SONGS FOR SLEEPY SOULS &nbsp; ☾ &nbsp; THE NIGHT IS YOUR FRIEND &nbsp; ✿ &nbsp; DELIVERING DREAMS SINCE FOREVER &nbsp; ✧ &nbsp; SOFT SONGS FOR SLEEPY SOULS &nbsp; ☾ &nbsp; THE NIGHT IS YOUR FRIEND &nbsp; ✿ &nbsp; DELIVERING DREAMS SINCE FOREVER &nbsp; </div></div>
+
+
+    <section class="passport-section container" id="passport" aria-labelledby="passport-title">
+      <div class="passport-shell">
+        <div class="passport-heading">
+          <p class="eyebrow">A TINY ADVENTURE / START HERE</p>
+          <h2 id="passport-title">Pip's <em>Dream Passport.</em></h2>
+          <p>Oh! You're here! I have three very important dream-engineering jobs. Help me finish them, collect three stamps, and I'll make you an official keepsake. ♡</p>
+        </div>
+        <div class="passport-progress-line"><strong>YOUR LITTLE STAMP BOOK</strong><span id="passport-progress">0 of 3 stamps collected</span></div>
+        <div class="passport-progress-track" role="presentation"><div id="passport-progress-bar"></div></div>
+        <div class="passport-steps">
+          <article class="passport-step" data-passport-step="melody">
+            <span class="passport-stamp" role="img" aria-label="Stamp not collected">✧</span>
+            <h3>♫ Make a lullaby</h3>
+            <p>Add at least three notes, then let the entire little melody play.</p>
+            <span class="passport-step-state">Not collected yet</span>
+            <a href="#compose-title">Visit the music box ↗</a>
+          </article>
+          <article class="passport-step" data-passport-step="lantern">
+            <span class="passport-stamp" role="img" aria-label="Stamp not collected">✧</span>
+            <h3>☾ Light the night</h3>
+            <p>Try a different lantern mood to help Pip light the nursery.</p>
+            <span class="passport-step-state">Not collected yet</span>
+            <a href="#mood-title">Choose a new glow ↗</a>
+          </article>
+          <article class="passport-step" data-passport-step="delivery">
+            <span class="passport-stamp" role="img" aria-label="Stamp not collected">✧</span>
+            <h3>✉ Deliver a dream</h3>
+            <p>Choose a little package and see it safely reach its destination.</p>
+            <span class="passport-step-state">Not collected yet</span>
+            <a href="#routes-title">Send a dream ↗</a>
+          </article>
+        </div>
+        <p id="passport-status" class="passport-status" role="status" aria-live="polite">Your passport is ready. Try one of Pip's inventions to earn a stamp.</p>
+        <div class="passport-award" id="passport-award" hidden>
+          <div class="award-star" aria-hidden="true">✦ ★ ✦</div>
+          <p class="eyebrow">THREE STAMPS / ONE VERY BIG ACHIEVEMENT</p>
+          <h3>You did it, <span id="passport-award-name">Little Dreamer</span>!</h3>
+          <p>Pip proudly names you an <strong>Honorary Dream Engineer</strong>. Here's a little certificate made of moon-paper, just for you. ♡</p>
+          <label for="passport-name">What should Pip write on your certificate? (optional)</label>
+          <input id="passport-name" name="passport-name" maxlength="24" autocomplete="nickname" placeholder="Little Dreamer">
+          <div class="passport-award-actions">
+            <button type="button" id="passport-save" class="button button-primary">↓ Save my certificate</button>
+            <a href="#dream-maker" class="button button-outline">✧ Make my bedtime dream</a>
+          </div>
+          <p id="passport-award-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="passport-foot">
+          <small>Stamps stay on this device when browser storage allows. No account or tracking.</small>
+          <button type="button" id="passport-reset" hidden>↻ Start a new passport</button>
+        </div>
+      </div>
+    </section>
 
     <section class="section container work" id="work" aria-labelledby="work-title">
       <div class="section-top"><div><p class="eyebrow">01 / FROM MY VERY IMPORTANT DESK</p><h2 id="work-title">Little things,<br><em>big dreams.</em></h2></div><div class="rubber-stamp" aria-hidden="true">MADE WITH<br>LOVE &amp; GLITTER<br>★ ★ ★</div></div>

@@ -45,3 +45,8 @@ Pip character concept and official PNG art (if installed) from [haX.baby's offic
 - [ ] Test music/mute, lantern modes, different routes, Dream Maker and manual copy fallback.
 - [ ] Complete `TEST_CHECKLIST.md`, test an actual phone, and check current submission instructions in the haX.baby workspace.
 - [ ] Submit before the organizer's published deadline (the supplied event brief lists **19 October 2026, 5:17 PM IST**).
+
+
+## Final addition — Dream Passport (verify on live site)
+
+Visitors earn 3 locally stored stamps for finishing a custom music-box playback, changing a lantern mood and delivering a package. Completing the passport unlocks a personalized, downloadable **Honorary Dream Engineer** certificate, plus a path to the existing Dream Maker. This progression uses browser events, localStorage and Canvas; it requires no backend or tracking. Progress is **per device**, not shared between visitors. Do not claim this feature is an official bonus side quest unless verified with the event rules.

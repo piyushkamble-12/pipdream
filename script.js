@@ -109,7 +109,11 @@
 
   function setMood(next, announcePip = true) {
     if (!moods.includes(next)) return;
+    const previousMood = mood;
     mood = next;
+    if (announcePip && previousMood !== next) {
+      window.dispatchEvent(new CustomEvent('pip:milestone', { detail: { step: 'lantern' } }));
+    }
     if (next !== 'sunset') lastNightMood = next;
     store('pip_lighting_mood', next);
     store('pip_dream_mode', String(next !== 'sunset'));
@@ -376,6 +380,9 @@
 
     customPlaybackTimer = setTimeout(() => {
       stopCustomPlayback('♫ Your own little lullaby finished.');
+      if (recorded.length >= 3) {
+        window.dispatchEvent(new CustomEvent('pip:milestone', { detail: { step: 'melody' } }));
+      }
       pipReact('What a sweet lullaby! You are a natural dream engineer. ♡');
     }, recorded.length * 340 + 380);
   });
@@ -543,6 +550,7 @@
         setTimeout(() => activeNode.classList.remove('arrival-pulse'), 1400);
       }
       pipReact(`Special delivery arrived safely at ${route.person}! Sleep tight! ✉`);
+      window.dispatchEvent(new CustomEvent('pip:milestone', { detail: { step: 'delivery' } }));
     };
 
     if (prefersReducedMotion.matches) {

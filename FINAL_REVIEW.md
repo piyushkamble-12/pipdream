@@ -43,3 +43,12 @@ The visitor pass is only a set of section links, **not** a tracked visitor ident
 - [ ] Change the optional name and inspect the exported PNG; default should be 'Little Dreamer'.
 - [ ] Clear passport with explicit confirmation, verify it resets, and re-earn the stamps.
 - [ ] Test touch, keyboard, reduced-motion, narrow phones and absent Clipboard permissions.
+
+
+## Final motion regression checklist
+
+- [ ] No horizontal overflow or obscured controls at 320, 375, 430 and 768px.
+- [ ] Pip floats without interfering with interaction; notes vanish within about one second.
+- [ ] Every Passport stamp still requires genuine task completion; awards and PNGs work.
+- [ ] Reduced-motion users see no decorative floating, bounce, or entrances.
+- [ ] Test an actual phone and public deployed site; verify scripts and styles load successfully.

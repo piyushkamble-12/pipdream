@@ -52,3 +52,11 @@ The visitor pass is only a set of section links, **not** a tracked visitor ident
 - [ ] Every Passport stamp still requires genuine task completion; awards and PNGs work.
 - [ ] Reduced-motion users see no decorative floating, bounce, or entrances.
 - [ ] Test an actual phone and public deployed site; verify scripts and styles load successfully.
+
+
+## Cursor signoff
+
+- [ ] No broken cursor assets on the live GitHub Pages deployment.
+- [ ] All three moods change the custom desktop cursor; mouse hotspots align with clicked controls.
+- [ ] Text entry, disabled buttons, touch behavior and accessibility fallbacks remain native.
+- [ ] Confirm the existing sparkle animation does not obscure controls or reduce readability.

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>Pip's dreamy arrow cursor</title>
+  <path d="M3.2 2.4 3.8 25.5 10.7 19.2 15.8 29.0 21.0 26.4 16.2 16.3 26.3 15.0Z" fill="#BBA3F0" stroke="#2B2547" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M3.9 7.4 4.2 23.1 10.9 16.9" fill="none" stroke="#EFE8FF" stroke-width=".9" opacity=".62"/>
+  <path d="M24.4 2.1 25.4 5.1 28.4 6.1 25.4 7.1 24.4 10.1 23.4 7.1 20.4 6.1 23.4 5.1Z" fill="#F6D89B" stroke="#2B2547" stroke-width=".6" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>Pip's clickable little star cursor</title>
+  <path d="M3.2 2.4 3.8 25.5 10.7 19.2 15.8 29.0 21.0 26.4 16.2 16.3 26.3 15.0Z" fill="#A34063" stroke="#FFFCF6" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M3.9 7.4 4.2 23.1 10.9 16.9" fill="none" stroke="#7C2D4F" stroke-width=".9" opacity=".62"/>
+  <path d="M24 1.5 25.5 5.1 29.2 6.6 25.5 8.0 24 11.8 22.5 8.0 18.9 6.6 22.5 5.1Z" fill="#E2B56D" stroke="#FFFCF6" stroke-width=".9" stroke-linejoin="round"/>
+  <circle cx="25.8" cy="12.4" r="1.2" fill="#E2B56D"/>
+</svg>

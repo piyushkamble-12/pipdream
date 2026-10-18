@@ -1,0 +1,27 @@
+name: Pip Browser QA
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Run browser checks
+        run: node tests/browser-qa.mjs
+      - name: Upload test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pip-browser-qa
+          path: qa-results/
+          if-no-files-found: ignore

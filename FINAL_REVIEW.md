@@ -29,3 +29,17 @@ These are **manual release checks**, not claims of completed live-site testing.
 ## Important scope notes
 
 The visitor pass is only a set of section links, **not** a tracked visitor identity or a hit counter. There is no guestbook, backend or live visitor data. Do not claim such bonus side quests. Public visibility and GitHub Pages settings must be changed by the repository owner; they cannot be activated from this site patch.
+
+
+## Dream Passport regression checks
+- [ ] Starting fresh shows 0/3 stamps and the certificate is hidden.
+- [ ] Compose only 1–2 notes: no stamp; finish replay of at least 3 notes: Melody stamp.
+- [ ] Mute, stop playback early, or reset melody: **no** false stamp for a new passport.
+- [ ] Pick the currently active lantern mode: no stamp; change mood: Lantern stamp.
+- [ ] Cancel midflight / change destination before arrival: no Delivery stamp; successful arrival: Delivery stamp.
+- [ ] Each stamp is earned only once even when repeating the associated action.
+- [ ] Refresh: progress persists where storage is enabled; fails gracefully when storage unavailable.
+- [ ] Complete all 3: award unlocks and a named certificate downloads as a PNG.
+- [ ] Change the optional name and inspect the exported PNG; default should be 'Little Dreamer'.
+- [ ] Clear passport with explicit confirmation, verify it resets, and re-earn the stamps.
+- [ ] Test touch, keyboard, reduced-motion, narrow phones and absent Clipboard permissions.

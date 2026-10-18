@@ -104,3 +104,17 @@ There is **no** shared guestbook, global visitor counter, remote AI generation, 
 The homepage includes a lightweight **Dreamer Pass** with three working jump links (Lullaby Lab, Dream Delivery, Dream Maker) so judges and new visitors can easily discover the interactive parts. The Dream Maker invites visitors to save their finished dream as a PNG; the Lullaby Lab clarifies that sound must first be enabled in the header. These are presentation and accessibility improvements, not additional backend features.
 
 For the demo sequence and **manual published-site checklist**, see [FINAL_REVIEW.md](FINAL_REVIEW.md). The page remains a plain GitHub Pages static site with no new dependencies.
+
+
+## Final signature experience: Pip's Dream Passport
+
+A cozy three-stamp journey connects the existing inventions without changing their individual operation:
+
+1. **Melody Maker:** enter at least three notes and finish replaying the recorded tune with Sound on.
+2. **Moonlight Keeper:** change to a different lighting mood from the lantern controls.
+3. **Dream Courier:** complete a route to the selected destination with a package.
+
+Each **actual completed action** dispatches a local 'pip:milestone' event; 'passport.js' records the stamp once. Progress is stored in localStorage if permitted (otherwise works until reload). At 3/3, the certificate panel unlocks and permits an **optional visitor-entered name** and a browser-generated PNG with Canvas. The existing Dream Maker remains available as the next optional reward. A manual reset button permits re-testing. No accounts, global counter, server, or tracking. The status regions announce milestones accessibly and reduced-motion avoids decorative transitions.
+
+### Freeze and test
+This is the **last planned feature** before submission. Review 'PASSPORT_TEST_PLAN.md' for test cases, then run the full cross-device and published-site checklist. Do not add unrelated features after merging.

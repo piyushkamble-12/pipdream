@@ -1,0 +1,23 @@
+[
+  {
+    "viewport": "desktop",
+    "width": 1440,
+    "status": "PASS",
+    "js_errors": [],
+    "missing_assets": []
+  },
+  {
+    "viewport": "phone",
+    "width": 375,
+    "status": "PASS",
+    "js_errors": [],
+    "missing_assets": []
+  },
+  {
+    "viewport": "small-phone",
+    "width": 320,
+    "status": "PASS",
+    "js_errors": [],
+    "missing_assets": []
+  }
+]

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f1">
+  <meta name="description" content="Meet Pip, the Midnight Nursery's tiniest dream engineer. Compose a lullaby, change the lantern, deliver a dream, and build your own personalized bedtime story.">
+  <meta property="og:title" content="Pip's Dream Desk | The Midnight Nursery">
+  <meta property="og:description" content="Tiny inventions for big dreams. Make a little bedtime story of your own in Pip’s dreamy workshop.">
+  <meta property="og:type" content="website">
+  <title>Pip's Dream Desk ✦ tiny inventions, big dreams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="dream-maker.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Pip's Dream Desk home"><span class="brand-moon" aria-hidden="true">☾</span> pip's dream desk<span class="brand-spark" aria-hidden="true">✳</span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#about">About Pip</a><a href="#work">Inventions</a><a href="#dream-maker">Dream Maker</a><a href="#story">My story</a><a href="#toybox">Toybox</a></nav>
+    <div class="controls">
+      <button class="utility-button" id="sound-toggle" type="button" aria-pressed="false"><span aria-hidden="true" id="sound-icon">♫</span><span id="sound-label">Sound off</span></button>
+      <button class="utility-button" id="theme-toggle" type="button" aria-pressed="false"><span aria-hidden="true" id="theme-icon">☾</span><span id="theme-label">Dream mode</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="kicker"><span class="status-dot" aria-hidden="true"></span> THE MIDNIGHT NURSERY IS OPEN</div>
+        <p class="hand-note">A little hello from the clouds ↗</p>
+        <h1 id="hero-title">Hello there,<br>I'm <em>Pip!</em><span class="heading-star" aria-hidden="true">✳</span></h1>
+        <p class="lede">Junior Dream Engineer, professional cloud napper, and <strong>maker of the dreams you fall asleep inside.</strong> The stars and I saved you a seat.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#dream-maker">Build a little dream <span aria-hidden="true">↗</span></a><a class="button button-outline" href="#story">Read my story <span aria-hidden="true">↓</span></a></div>
+        <div class="signature"><span aria-hidden="true">♡</span> handwritten with sleepy little hands</div>
+        <p class="visitor-note" id="visitor-note" aria-live="polite">A little corner of the internet, saved just for you.</p>
+      </div>
+      <div class="hero-stage" id="about">
+        <div class="hero-stamp stamp-top" aria-hidden="true">EST. ONE<br>MOON AGO</div>
+        <span class="twinkle t1" aria-hidden="true">✧</span><span class="twinkle t2" aria-hidden="true">✴</span><span class="twinkle t3" aria-hidden="true">✦</span>
+        <button type="button" id="pip-character" class="pip-portrait" aria-label="Wave hello to Pip">
+          <img id="pip-image" class="official-asset" src="assets/pip-fallback.svg" data-fallback="assets/pip-fallback.svg" alt="Pip, a sleepy, friendly skull baby in a starry nightcap with a pink bow, waving from a cloud" width="530" height="550" fetchpriority="high">
+        </button>
+        <div id="pip-greeting" class="speech-bubble" role="status">psst... tap me! ♡</div>
+        <div class="hero-stamp stamp-bottom" aria-hidden="true">100% CERTIFIED<br>SOFT &amp; SLEEPY</div>
+        <p class="scene-caption">☁ floating approximately one pillow above sea level ☁</p>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track">✧ SOFT SONGS FOR SLEEPY SOULS &nbsp; ☾ &nbsp; THE NIGHT IS YOUR FRIEND &nbsp; ✿ &nbsp; DELIVERING DREAMS SINCE FOREVER &nbsp; ✧ &nbsp; SOFT SONGS FOR SLEEPY SOULS &nbsp; ☾ &nbsp; THE NIGHT IS YOUR FRIEND &nbsp; ✿ &nbsp; DELIVERING DREAMS SINCE FOREVER &nbsp; </div></div>
+
+    <section class="section container work" id="work" aria-labelledby="work-title">
+      <div class="section-top"><div><p class="eyebrow">01 / FROM MY VERY IMPORTANT DESK</p><h2 id="work-title">Little things,<br><em>big dreams.</em></h2></div><div class="rubber-stamp" aria-hidden="true">MADE WITH<br>LOVE &amp; GLITTER<br>★ ★ ★</div></div>
+      <p class="section-description">Some people make spreadsheets. I make the night a little kinder. Touch, click, or tap these inventions!</p>
+
+      <div class="project-grid">
+        <article class="project-card project-pink" aria-labelledby="music-title">
+          <div class="project-visual"><span class="project-sticker" aria-hidden="true">♫</span><img class="official-asset" src="assets/music-fallback.svg" data-fallback="assets/music-fallback.svg" alt="Pastel pink and gold lullaby music box with a little carousel pony" width="400" height="400" loading="lazy"><span class="orbit-label" aria-hidden="true">made for tiny ears!</span></div>
+          <div class="project-body"><span class="project-id">INVENTION NO. 001 / MUSIC</span><h3 id="music-title">The Lullaby Lab</h3><p>A teeny, six-note melody for the nights when your thoughts are too loud. I made it from stardust. Mostly.</p><button id="lullaby-button" class="button button-small" type="button" aria-pressed="false"><span id="lullaby-icon" aria-hidden="true">♫</span> <span id="lullaby-label">Play my lullaby</span></button>
+          <p id="lullaby-status" class="micro-copy" role="status">Sound plays only after you press play.</p>
+          <div class="invention-playground music-playground" aria-labelledby="compose-title">
+            <h4 id="compose-title">♫ Make a tiny melody</h4>
+            <p class="playground-helper">Tap up to 12 notes (or use keyboard keys C, D, E, F, G, A). Pip keeps them safe in the music box.</p>
+            <div class="music-keys" role="group" aria-label="Compose music box notes">
+              <button type="button" class="note-key" data-note="C" aria-label="Add C note"><span class="key-name">C</span><span class="key-sub">do</span></button>
+              <button type="button" class="note-key" data-note="D" aria-label="Add D note"><span class="key-name">D</span><span class="key-sub">re</span></button>
+              <button type="button" class="note-key" data-note="E" aria-label="Add E note"><span class="key-name">E</span><span class="key-sub">mi</span></button>
+              <button type="button" class="note-key" data-note="F" aria-label="Add F note"><span class="key-name">F</span><span class="key-sub">fa</span></button>
+              <button type="button" class="note-key" data-note="G" aria-label="Add G note"><span class="key-name">G</span><span class="key-sub">sol</span></button>
+              <button type="button" class="note-key" data-note="A" aria-label="Add A note"><span class="key-name">A</span><span class="key-sub">la</span></button>
+            </div>
+            <div id="recorded-notes" class="recorded-notes" aria-label="Your notes"><span class="empty-melody-hint">♫ Your melody is an empty little page. Tap notes above to compose!</span></div>
+            <div class="playground-actions"><button id="play-custom" class="mini-action" type="button" aria-pressed="false" disabled>▶ Replay yours</button><button id="reset-custom" class="mini-action mini-action-quiet" type="button" disabled>↻ Start fresh</button></div>
+            <p id="compose-status" class="micro-copy" role="status" aria-live="polite">Ready when you are. ♡</p>
+          </div></div>
+        </article>
+        <article class="project-card project-yellow" aria-labelledby="lamp-title">
+          <div class="project-visual lamp-visual"><span class="project-sticker" aria-hidden="true">☾</span><div class="lamp-halo" aria-hidden="true"></div><img class="official-asset" src="assets/lantern-fallback.svg" data-fallback="assets/lantern-fallback.svg" alt="Pip's glowing porcelain moon nightlight, with tiny pastel stars" width="400" height="400" loading="lazy"><span class="orbit-label" aria-hidden="true">no more scary shadows!</span></div>
+          <div class="project-body"><span class="project-id">INVENTION NO. 002 / LIGHT</span><h3 id="lamp-title">The Moonbeam Lantern</h3><p>What if a nightlight felt like a hug? I saved a pocketful of moonbeams for whoever needs them.</p><button id="lantern-button" class="button button-small" type="button" aria-pressed="false">☾ <span id="lantern-label">Try the next glow</span></button>
+          <div class="invention-playground lantern-playground" aria-labelledby="mood-title">
+            <h4 id="mood-title">Choose the lantern's glow</h4>
+            <div class="mood-options" role="group" aria-label="Lighting mood">
+              <button class="mood-option" type="button" data-mood-option="sunset" aria-pressed="true"><span class="mood-dot sunset-dot" aria-hidden="true"></span>Warm sunset</button>
+              <button class="mood-option" type="button" data-mood-option="lavender" aria-pressed="false"><span class="mood-dot lavender-dot" aria-hidden="true"></span>Moonlit lavender</button>
+              <button class="mood-option" type="button" data-mood-option="midnight" aria-pressed="false"><span class="mood-dot midnight-dot" aria-hidden="true"></span>Midnight blue</button>
+            </div>
+            <div class="lantern-miniature" aria-hidden="true"><span class="lantern-glow"></span><span class="lantern-symbol">☾</span><span class="lantern-ground"></span></div>
+            <p id="lantern-status" class="micro-copy" role="status" aria-live="polite">Pip warmed the room with a pocketful of sunset.</p>
+          </div></div>
+        </article>
+        <article class="project-card project-lilac" aria-labelledby="routes-title">
+          <div class="project-visual route-visual"><span class="project-sticker" aria-hidden="true">✉</span>
+            <svg id="delivery-map" viewBox="0 0 440 290" role="img" aria-labelledby="route-svg-title route-svg-desc">
+              <title id="route-svg-title">Pip's dream delivery map</title><desc id="route-svg-desc">Three distinct dream trails leave the Midnight Nursery for the moon, cloud garden, and starlit forest.</desc>
+              <defs><linearGradient id="road-glow" x1="0" x2="1"><stop offset="0" stop-color="#e5acd1"/><stop offset="1" stop-color="#f9d38c"/></linearGradient></defs>
+              <g opacity=".4" fill="none" stroke="#b792b7" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 12">
+                <path d="M30 231 C110 224 105 68 220 110 S330 85 388 59"/>
+                <path d="M30 231 C125 255 134 156 218 170 S310 204 388 204"/>
+                <path d="M30 231 C90 145 170 249 215 138 S304 77 388 128"/>
+              </g>
+              <path id="delivery-path" d="M30 231 C110 224 105 68 220 110 S330 85 388 59" stroke="#a34063" stroke-width="5" fill="none" stroke-linecap="round" stroke-dasharray="5 12"/>
+              <g aria-hidden="true">
+                <g id="dest-moon" class="dest-node active-dest" transform="translate(388 59)"><circle class="dest-halo" r="32" fill="#fff1bb" opacity="0.35"/><circle class="dest-circle" r="26" fill="#fff1bb"/><text text-anchor="middle" dominant-baseline="central" font-size="28">☾</text></g>
+                <g id="dest-forest" class="dest-node" transform="translate(388 128)"><circle class="dest-halo" r="31" fill="#cfe1d0" opacity="0"/><circle class="dest-circle" r="25" fill="#cfe1d0"/><text text-anchor="middle" dominant-baseline="central" font-size="25">🌲</text></g>
+                <g id="dest-garden" class="dest-node" transform="translate(388 204)"><circle class="dest-halo" r="32" fill="#e6dfff" opacity="0"/><circle class="dest-circle" r="26" fill="#e6dfff"/><text text-anchor="middle" dominant-baseline="central" font-size="24">✿</text></g>
+                <text x="67" y="51" font-size="23" fill="#c48f53">✦</text><text x="277" y="36" font-size="17" fill="#c48f53">✧</text>
+              </g>
+              <g transform="translate(3 188)"><rect x="9" y="34" width="49" height="48" rx="7" fill="#f1b7bb"/><path d="M0 37L33 9l35 28Z" fill="#b97b9f"/><rect x="28" y="53" width="14" height="29" rx="3" fill="#fff0d3"/></g>
+              <g id="parcel" transform="translate(30 231)"><circle r="19" fill="#fffaf1" stroke="#a34063" stroke-width="2"/><text text-anchor="middle" dominant-baseline="central" font-size="24">✉</text></g>
+              <text x="5" y="280" font-size="11" fill="#765d85" font-weight="600">NURSERY ♡</text><text id="route-destination-label" x="291" y="275" font-size="11" fill="#765d85" font-weight="600">TO THE MOON</text>
+            </svg>
+          </div>
+          <div class="project-body"><span class="project-id">INVENTION NO. 003 / ADVENTURE</span><h3 id="routes-title">Dream Delivery Express</h3><p>Every good dream deserves a safe trip home. Help me deliver a little wish across the sleepy rooftops.</p><div class="invention-playground delivery-playground">
+            <label for="delivery-destination">Send to</label>
+            <select id="delivery-destination" class="dream-select"><option value="moon">Moon Nursery</option><option value="garden">Cloud Garden</option><option value="forest">Starlit Forest</option></select>
+            <label for="delivery-package">A little parcel of</label>
+            <select id="delivery-package" class="dream-select"><option value="courage">a spoonful of courage ✦</option><option value="calm">quiet, cozy clouds ☁</option><option value="wonder">a pocket of wonder ✧</option></select>
+            <button id="deliver-button" class="button button-small" type="button">✉ <span>Deliver this dream</span></button><p id="delivery-status" class="micro-copy" role="status" aria-live="polite">Choose a dream and watch it travel.</p>
+          </div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="dream-maker-section" id="dream-maker" aria-labelledby="maker-title">
+      <div class="container">
+        <div class="maker-heading"><p class="eyebrow">02 / THE MOST SECRET CORNER OF MY WORKSHOP</p><h2 id="maker-title">Build a <em>little dream.</em></h2><p>Every dream is made of three small things. Pick yours, and I'll tuck a story into the stars for you. — Pip ♡</p></div>
+        <div class="maker-panel">
+          <form id="dream-maker-form" class="maker-form">
+            <fieldset class="maker-options"><legend><span class="maker-number">1</span> How should it feel?</legend>
+              <label class="maker-choice"><input type="radio" name="feeling" value="cozy" checked><span>🧸 <strong>Cozy</strong><small>Soft as a quilt</small></span></label>
+              <label class="maker-choice"><input type="radio" name="feeling" value="adventurous"><span>✨ <strong>Adventurous</strong><small>Brave little steps</small></span></label>
+              <label class="maker-choice"><input type="radio" name="feeling" value="peaceful"><span>🫧 <strong>Peaceful</strong><small>A gentle hush</small></span></label>
+            </fieldset>
+            <fieldset class="maker-options"><legend><span class="maker-number">2</span> Where shall we go?</legend>
+              <label class="maker-choice"><input type="radio" name="destination" value="moon" checked><span>🌙 <strong>The Moon</strong><small>Silver seas</small></span></label>
+              <label class="maker-choice"><input type="radio" name="destination" value="garden"><span>☁ <strong>Cloud Garden</strong><small>Floating flowers</small></span></label>
+              <label class="maker-choice"><input type="radio" name="destination" value="forest"><span>🌲 <strong>Starlit Forest</strong><small>Whispering trees</small></span></label>
+            </fieldset>
+            <fieldset class="maker-options"><legend><span class="maker-number">3</span> Who's coming along?</legend>
+              <label class="maker-choice"><input type="radio" name="companion" value="fox" checked><span>🦊 <strong>Tiny Fox</strong><small>Curious whiskers</small></span></label>
+              <label class="maker-choice"><input type="radio" name="companion" value="star"><span>⭐ <strong>Sleepy Star</strong><small>A warm glow</small></span></label>
+              <label class="maker-choice"><input type="radio" name="companion" value="dragon"><span>🐲 <strong>Baby Dragon</strong><small>Little sparks</small></span></label>
+            </fieldset>
+            <button id="make-dream" type="submit" class="button button-primary maker-submit">✧ Make my dream</button>
+          </form>
+          <div class="dream-card-area">
+            <div id="dream-placeholder" class="dream-placeholder"><span class="placeholder-moon" aria-hidden="true">☾</span><p>A blank page in Pip's dream diary...</p><small>Your very own bedtime story is one click away.</small></div>
+            <article id="dream-result" class="dream-result" hidden aria-labelledby="dream-result-title">
+              <div id="dream-art" class="dream-art" data-place="moon" data-feeling="cozy" aria-hidden="true">
+                <div class="dream-art-visual" id="dream-art-visual"></div>
+                <span class="dream-art-sky" style="display:none">✧ ✦ · ✧</span>
+                <span id="dream-art-place" class="dream-art-place" style="display:none">☾</span>
+                <span id="dream-art-friend" class="dream-art-friend" style="display:none">🦊</span>
+                <span class="dream-art-hill" style="display:none"></span>
+              </div>
+              <div class="dream-card-copy"><p class="dream-card-kicker">A ONE-OF-A-KIND DREAM FOR YOU · ♡</p><h3 id="dream-result-title" tabindex="-1"></h3><p id="dream-result-story"></p><p id="dream-pip-message" class="pip-signoff"></p></div>
+            </article>
+            <div class="maker-result-actions" id="maker-result-actions" hidden>
+              <button type="button" id="another-dream" class="button button-small">↻ Another dream</button>
+              <button type="button" id="save-dream-card" class="button button-outline">💾 Save Dream Card</button>
+              <button type="button" id="copy-dream" class="button button-outline">⧉ Copy my story</button>
+            </div>
+            <p id="maker-status" class="maker-status" role="status" aria-live="polite">Pip has his pen ready. ♡</p>
+            <textarea id="dream-copy-fallback" class="copy-fallback" aria-label="Select your dream text to copy" readonly hidden></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Tier 2 interaction: entirely local, no server or API keys. -->
+    <section class="toybox-section container" id="toybox" aria-labelledby="toybox-title">
+      <div class="toybox-heading">
+        <div>
+          <p class="eyebrow">BONUS / A LITTLE TOY FROM PIP'S WORKSHOP</p>
+          <h2 id="toybox-title">The sleepy <em>mailroom.</em></h2>
+          <p>Oh no! I mixed up all the bedtime deliveries. Help me send each dream to the right sleepy friend!</p>
+        </div>
+        <div class="toy-postmark" aria-hidden="true">✉<span>HANDLE WITH<br>DAYDREAMS</span></div>
+      </div>
+      <div class="toybox-panel" aria-label="Dream sorting mini game">
+        <div class="toybox-dream">
+          <div class="toybox-status-line">
+            <span id="toy-progress">DREAM 1 OF 5</span>
+            <div class="toybox-dots" id="toy-dots" aria-hidden="true">
+              <span class="toy-dot active" data-step="1">1</span>
+              <span class="toy-dot" data-step="2">2</span>
+              <span class="toy-dot" data-step="3">3</span>
+              <span class="toy-dot" data-step="4">4</span>
+              <span class="toy-dot" data-step="5">5</span>
+            </div>
+            <span id="toy-score">0 dreams delivered</span>
+          </div>
+          <div class="toybox-letter" id="toy-letter">
+            <span id="toy-icon" class="toybox-illustration" aria-hidden="true">🌙</span>
+            <span class="toybox-paper-label">A NOTE FROM PIP ♡</span>
+            <h3 id="toy-title">A marshmallow telescope</h3>
+            <p id="toy-clue">Who likes looking at stars from the roof?</p>
+          </div>
+        </div>
+        <div class="toybox-choices">
+          <p class="toybox-choices-label">Where should this dream go?</p>
+          <div class="toybox-buttons" role="group" aria-label="Choose a dream destination">
+            <button class="toy-choice" data-destination="rooftop" type="button"><span aria-hidden="true">🦉</span><span>Ollie's rooftop</span></button>
+            <button class="toy-choice" data-destination="pond" type="button"><span aria-hidden="true">🐸</span><span>Frog's pond</span></button>
+            <button class="toy-choice" data-destination="nest" type="button"><span aria-hidden="true">🐭</span><span>Mouse's nest</span></button>
+          </div>
+          <p id="toy-feedback" class="toy-feedback" role="status" aria-live="polite">Pick a destination to make a delivery.</p>
+          <button id="toy-restart" class="button button-outline toy-restart" type="button" hidden>↻ Play again</button>
+          <p class="toybox-footnote">Tiny toy, big responsibility. Works with mouse, touch, or keyboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story" aria-labelledby="story-title"><div class="container story-container"><div class="story-intro"><p class="eyebrow">02 / A BEDTIME STORY, IN THREE LITTLE PARTS</p><h2 id="story-title">Once upon a <em>moonbeam...</em></h2><p>Take your time. The best stories don't run away.</p></div>
+      <div class="storybook">
+        <article class="story-scene"><div class="scene-art" aria-hidden="true"><span>☾</span><span class="art-spark">✧</span></div><div class="scene-text"><span class="chapter">CHAPTER ONE · A STAR FALLS ASLEEP</span><h3>It began with a yawn.</h3><p>One quiet evening, a star fell asleep before it could shine. I found it curled up inside my nightcap, warm as a freshly baked cookie. I didn't want to wake it.</p></div></article>
+        <article class="story-scene"><div class="scene-art" aria-hidden="true"><span>♫</span><span class="art-spark">✳</span></div><div class="scene-text"><span class="chapter">CHAPTER TWO · A VERY BIG IDEA</span><h3>A song made of small things.</h3><p>So I made a lullaby from an old button, a ribbon, and three humming moonbeams. The star smiled in its sleep. That's when I learned that small things can make the world feel safe.</p></div></article>
+        <article class="story-scene"><div class="scene-art" aria-hidden="true"><span>♡</span><span class="art-spark">✦</span></div><div class="scene-text"><span class="chapter">CHAPTER THREE · YOU'RE HERE!</span><h3>There's always room for one more.</h3><p>Now I work at the Midnight Nursery, delivering gentle dreams. My desk is messy, my hat is crooked, and I sometimes mix up the stars. But I'll always leave a little light on for you.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="about-strip container" aria-labelledby="about-title"><div class="about-copy"><p class="eyebrow">03 / MY VERY OFFICIAL PROFILE</p><h2 id="about-title">A few <em>Pip-sized</em> facts.</h2><p>Species: one very small skull baby. Disposition: sleepy, curious, deeply impressed by buttons. Occupation: Junior Dream Engineer at the Midnight Nursery.</p><p class="small-handwriting">Current goal: remember where I put my moon.</p></div><div class="facts-note" aria-label="Pip's personality notes"><span>★ HELLO, IT'S ME ★</span><p>Favorite thing</p><strong>Warm little lights</strong><p>Natural talent</p><strong>Napping at work</strong><p>Life motto</p><strong>Good dreams grow from small things.</strong></div></section>
+
+    <section class="secret-section" aria-labelledby="secret-title"><div class="container secret-wrap"><p class="eyebrow">ONE LAST THING BEFORE YOU GO...</p><h2 id="secret-title">A little goodnight,<br><em>just for you.</em></h2><p>The moon has been keeping a tiny secret. Maybe it's waiting for someone curious to knock.</p>    <div class="moon-button-wrap">
+      <button type="button" id="secret-moon" class="moon-button" aria-label="Knock on the little moon"><span aria-hidden="true">☾</span></button>
+      <div class="knock-meter" id="knock-meter" aria-hidden="true">
+        <span class="knock-dot" data-knock="1">✦</span>
+        <span class="knock-dot" data-knock="2">✦</span>
+        <span class="knock-dot" data-knock="3">✦</span>
+        <span class="knock-dot" data-knock="4">✦</span>
+        <span class="knock-dot" data-knock="5">★</span>
+      </div>
+    </div>
+    <p id="secret-message" class="secret-message" role="status" aria-live="polite">The stars are listening... ✦</p></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">☾ pip's dream desk</a><p>A little corner of the internet, made with moonbeams. No accounts, no tracking cookies. Your dream stays on your device.</p></div><div class="credits"><strong>Made for Baby's First Website · Track 1</strong><p>Pip character and optional official PNGs are from <a href="https://hax.baby/baby-problem" target="_blank" rel="noopener noreferrer">haX.baby</a> creator assets. Website, local SVG illustrations and interactions by the project team. The Dream Maker and toybox run entirely on your device.</p></div><a class="back-top" href="#top">Back to the clouds ↑</a></div></footer>
+  <div id="confetti-layer" aria-hidden="true"></div>
+</body>
+</html>

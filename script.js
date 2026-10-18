@@ -232,7 +232,10 @@
       stopMelody('The music box is tucked in. ♡');
       return;
     }
-    if (!soundOn) soundOn = true; // A Play click is explicit consent to sound.
+    if (!soundOn) {
+      $('#lullaby-status').textContent = 'Please turn sound on in the header before playing Pip’s lullaby. ♫';
+      return;
+    }
     if (!audioReady()) {
       soundOn = false;
       syncSound();

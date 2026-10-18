@@ -379,7 +379,9 @@
     }
 
     if (window.matchMedia('(max-width: 780px)').matches) {
-      result.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const scrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto' : 'smooth';
+      result.scrollIntoView({ behavior: scrollBehavior, block: 'start' });
     }
   }
 

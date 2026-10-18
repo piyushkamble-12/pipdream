@@ -60,3 +60,14 @@ The visitor pass is only a set of section links, **not** a tracked visitor ident
 - [ ] All three moods change the custom desktop cursor; mouse hotspots align with clicked controls.
 - [ ] Text entry, disabled buttons, touch behavior and accessibility fallbacks remain native.
 - [ ] Confirm the existing sparkle animation does not obscure controls or reduce readability.
+
+
+## Final release bug-fix checks
+
+- [ ] Earn three Passport stamps while scrolled down in an invention. The small completion notice appears without changing focus or scroll.
+- [ ] View my reward moves to the certificate and sets keyboard focus; Not now dismisses the notice.
+- [ ] After confirming a reset, prior certificate name/status and the notice disappear; declining reset leaves them intact.
+- [ ] While a navigation link, control, or field is focused, typing note shortcut letters does not add notes.
+- [ ] Keyboard shortcuts still work when the page itself (not an interactive element) has focus.
+- [ ] Changing OS/browser to reduced motion mid-session stops newly generated sparkles and hero-pointer movement; mobile Dream Maker scrolls immediately.
+- [ ] Re-run Passport, Dream Maker, audio, touch, PNG export, links and GitHub Pages live checks.

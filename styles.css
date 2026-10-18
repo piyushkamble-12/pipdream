@@ -621,3 +621,41 @@ button:disabled { opacity: .5; cursor: not-allowed; transform: none !important; 
     cursor: text !important;
   }
 }
+
+/* Release QA: a discoverable, non-modal passport reward handoff. */
+#passport-award { scroll-margin-top: 35px; }
+#passport-award:focus { outline: 3px solid var(--berry); outline-offset: 5px; }
+.passport-reward-notice {
+  position: fixed;
+  z-index: 210;
+  right: max(14px, env(safe-area-inset-right));
+  bottom: max(14px, env(safe-area-inset-bottom));
+  width: min(385px, calc(100vw - 28px));
+  max-height: min(65vh, 340px);
+  overflow-y: auto;
+  padding: 18px 20px;
+  border: 2px solid var(--berry);
+  border-radius: 19px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 10px 36px rgba(20, 12, 26, .25);
+}
+.passport-reward-notice p { margin: 0 0 11px; font-size: .87rem; }
+.passport-reward-notice .passport-reward-title {
+  color: var(--berry);
+  font: 600 1.05rem/1.3 'Fredoka', sans-serif;
+}
+.passport-reward-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.passport-reward-actions a { display: inline-flex; align-items: center; text-decoration: none; }
+.passport-reward-actions .passport-reward-dismiss {
+  border: 0;
+  background: transparent;
+  padding: 10px;
+  color: var(--ink);
+  font: 600 .8rem 'Fredoka', sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 355px) {
+  .passport-reward-notice { padding: 14px; }
+}

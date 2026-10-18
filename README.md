@@ -130,3 +130,10 @@ The optional `motion.js` and `motion.css` layer adds Pip's gentle floating portr
 A small, **static SVG cursor** follows Pip's three lantern moods: berry-pink for sunset, lavender for moonlight, and pale blue for midnight. Hovering links and enabled controls adds a tiny star accent. It uses six local `assets/cursor-*.svg` files plus CSS—no image downloads, API requests, JavaScript event handlers, or extra animation loops. The existing optional sparkle trail is unchanged.
 
 The cursor only applies to fine-pointer hover devices. Phones, touchscreens, text entry, disabled controls, and high-contrast users retain sensible native cursor behavior. Browsers lacking SVG cursor support fall back to the default arrow or pointer. Test all three moods and click targets on the deployed GitHub Pages URL.
+
+
+## Final QA bug-fix patch
+
+The Passport's third stamp now reveals a small, dismissible **View my reward** notice beside the finished activity, so visitors can reach the previously off-screen certificate without an automatic scroll or focus jump. Clicking the link scrolls to the certificate and moves keyboard focus there. A new Passport also clears the previous certificate name and status. Global music keyboard shortcuts no longer fire when a button/link/form control is focused, or when modifier/repeat keys are used. Decorative sparkle and hero pointer effects stop when reduced motion is enabled after page load, and Dream Maker respects reduced motion for mobile result scrolling. No new libraries, backend, or gameplay features.
+
+See `BUGFIX_QA_CHECKLIST.md` before merging/submission.

@@ -99,10 +99,10 @@
           </article>
         </div>
         <p id="passport-status" class="passport-status" role="status" aria-live="polite">Your passport is ready. Try one of Pip's inventions to earn a stamp.</p>
-        <div class="passport-award" id="passport-award" hidden>
+        <div class="passport-award" id="passport-award" tabindex="-1" aria-labelledby="passport-award-title" hidden>
           <div class="award-star" aria-hidden="true">✦ ★ ✦</div>
           <p class="eyebrow">THREE STAMPS / ONE VERY BIG ACHIEVEMENT</p>
-          <h3>You did it, <span id="passport-award-name">Little Dreamer</span>!</h3>
+          <h3 id="passport-award-title">You did it, <span id="passport-award-name">Little Dreamer</span>!</h3>
           <p>Pip proudly names you an <strong>Honorary Dream Engineer</strong>. Here's a little certificate made of moon-paper, just for you. ♡</p>
           <label for="passport-name">What should Pip write on your certificate? (optional)</label>
           <input id="passport-name" name="passport-name" maxlength="24" autocomplete="nickname" placeholder="Little Dreamer">
@@ -305,6 +305,14 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">☾ pip's dream desk</a><p>A little corner of the internet, made with moonbeams. No accounts, no tracking cookies. Your dream stays on your device.</p></div><div class="credits"><strong>Made for Baby's First Website · Track 1</strong><p>Pip character and optional official PNGs are from <a href="https://hax.baby/baby-problem" target="_blank" rel="noopener noreferrer">haX.baby</a> creator assets. Website, local SVG illustrations and interactions by the project team. The Dream Maker and toybox run entirely on your device.</p></div><a class="back-top" href="#top">Back to the clouds ↑</a></div></footer>
+  <aside id="passport-reward-notice" class="passport-reward-notice" hidden aria-labelledby="passport-reward-title">
+    <p id="passport-reward-title" class="passport-reward-title">✦ All three stamps collected!</p>
+    <p>Pip made a little Dream Engineer certificate just for you. ♡</p>
+    <div class="passport-reward-actions">
+      <a id="passport-reward-link" href="#passport-award" class="mini-action">View my reward ↗</a>
+      <button id="passport-reward-dismiss" type="button" class="passport-reward-dismiss">Not now</button>
+    </div>
+  </aside>
   <div id="confetti-layer" aria-hidden="true"></div>
 </body>
 </html>

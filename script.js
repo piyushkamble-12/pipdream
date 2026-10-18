@@ -397,8 +397,16 @@
 
   // Keyboard shortcut support for composing music box notes
   window.addEventListener('keydown', (event) => {
-    const active = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
-    if (active === 'input' || active === 'textarea' || active === 'select') return;
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey ||
+        event.isComposing || event.repeat) return;
+    const focused = document.activeElement;
+    // Do not interpret letters as music when users operate links, buttons,
+    // radio options, or editable regions with their keyboard.
+    if (focused && (focused.isContentEditable ||
+        (typeof focused.closest === 'function' && focused.closest(
+          'a[href], button, input, textarea, select, summary, [contenteditable], ' +
+          '[role="button"], [role="link"], [role="textbox"], [role="combobox"]'
+        )))) return;
     const keyMap = {
       'c': 'C', 'C': 'C', '1': 'C',
       'd': 'D', 'D': 'D', '2': 'D',
@@ -438,6 +446,8 @@
     let lastSparkle = 0;
     const characters = ['✧', '✦', '⋆'];
     document.addEventListener('pointermove', (event) => {
+      // A user may enable reduced motion *after* the page initially loads.
+      if (prefersReducedMotion.matches) return;
       const now = performance.now();
       if (now - lastSparkle < 75) return;
       lastSparkle = now;

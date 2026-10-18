@@ -20,6 +20,9 @@
   const resetButton = document.querySelector('#passport-reset');
   const nameInput = document.querySelector('#passport-name');
   const awardName = document.querySelector('#passport-award-name');
+  const rewardNotice = document.querySelector('#passport-reward-notice');
+  const rewardLink = document.querySelector('#passport-reward-link');
+  const rewardDismiss = document.querySelector('#passport-reward-dismiss');
 
   let complete = { melody: false, lantern: false, delivery: false };
 
@@ -82,9 +85,26 @@
         ? 'You completed Pip’s Dream Passport! Your certificate is unlocked below. ♡'
         : count + ' of 3 stamps collected.');
     render(announcement);
+    if (count === 3) {
+      // Completion happens inside an invention, often far below the Passport.
+      // Show a small optional handoff rather than stealing focus or scrolling.
+      rewardNotice.hidden = false;
+    }
     if (count === 3 && typeof window.pipReact === 'function') {
       window.pipReact('You collected every stamp! I made you a very important certificate. ♡');
     }
+  });
+
+  rewardLink.addEventListener('click', (event) => {
+    if (award.hidden) return; // Keep the native anchor as a safe fallback.
+    event.preventDefault();
+    rewardNotice.hidden = true;
+    award.scrollIntoView({ behavior: 'auto', block: 'start' });
+    award.focus({ preventScroll: true });
+  });
+
+  rewardDismiss.addEventListener('click', () => {
+    rewardNotice.hidden = true;
   });
 
   function cleanName() {
@@ -189,6 +209,10 @@
   resetButton.addEventListener('click', () => {
     if (!window.confirm('Start a new Dream Passport? Your collected stamps will reset on this device.')) return;
     complete = { melody: false, lantern: false, delivery: false };
+    nameInput.value = '';
+    awardName.textContent = cleanName();
+    awardStatus.textContent = '';
+    rewardNotice.hidden = true;
     store();
     render('Your new passport is ready for another journey. ♡');
   });

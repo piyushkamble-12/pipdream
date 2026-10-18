@@ -54,12 +54,14 @@
   // Pip's desk feels slightly three-dimensional, without parallax scrolling.
   if (stage && finePointer.matches && !reduced.matches) {
     stage.addEventListener('pointermove', event => {
+      if (reduced.matches) return;
       const r = stage.getBoundingClientRect();
       if (!r.width || !r.height) return;
       pointerX = ((event.clientX - r.left) / r.width - .5) * 15;
       pointerY = ((event.clientY - r.top) / r.height - .5) * 12;
       if (pointerFrame) return;
       pointerFrame = window.requestAnimationFrame(() => {
+        if (reduced.matches) { pointerFrame = 0; return; }
         stage.style.setProperty('--motion-x', pointerX.toFixed(1) + 'px');
         stage.style.setProperty('--motion-y', pointerY.toFixed(1) + 'px');
         pointerFrame = 0;
